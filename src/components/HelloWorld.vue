@@ -127,6 +127,10 @@ export default {
       // 其中，第一个参数'topo-canvas'表示canvas所在的父dom元素id，通常为<div class="canvas" id="topo-canvas"></div>；
       // 第二个参数{}表示画布选项，这里表示全部使用默认值。具体选项请参考后面的api文档。
       this.canvas = new Topology('topo-canvas', {})
+      // 事件
+      this.canvas.on('node', (e) => {
+        console.log(e)
+      })
       // 3. 渲染图形
       // 画布图形数据，可以来自于官网下载的json
       // const json = {pens: [this.json]}

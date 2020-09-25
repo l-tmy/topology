@@ -18,11 +18,12 @@ export const Tools = [
       {
         name: 'square',
         icon: 'icon-azure',
+        tipId: 11,
         data: {
           text: 'Azure',
           rect: {
             width: 100,
-            height: 100
+            height: 120
           },
           paddingLeft: 10,
           paddingRight: 10,
@@ -34,9 +35,11 @@ export const Tools = [
           // z: 10,
           // zRotate: 15,
           // fillStyle: '#ddd',
+          // image: '../../static/img/icon-azure.svg', // 图片比icon优先展示
+          image: '../../static/img/111.gif', // 图片比icon优先展示
           icon: '\ue601',
           iconFamily: 'iconfont',
-          iconColor: '#2f54eb'
+          iconColor: '#2f54eb' // 字体图标颜色
         }
       },
       {
@@ -282,7 +285,7 @@ export const Tools = [
             height: 100
           },
           name: 'image',
-          image: '/img/logo1.png'
+          image: '../../static/img/logo.png'
         }
       },
       {
